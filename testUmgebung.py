@@ -1,10 +1,16 @@
-try:
-    grad = int(input("Gib eine beliebige Temperatur ein: "))
+def tageszeit(name, zeit):
 
-    if grad < 0:
-        print("Es friert")
+    begruessungen = {
+            "morgens": "Guten Morgen",
+            "mittags": "Guten Tag",
+            "abends": "Guten Abend"
+        }
+
+    gruss = begruessungen.get(zeit.lower())
+    
+    if gruss:
+        print(f"{gruss}, {name}.")
     else:
-        print("Kein Frost")
+        print("Ungültige Eingabe.")
 
-except ValueError:
-    print("Gib eine gültige Zahl ein.")
+tageszeit(input("Wie heißt du?\n"), input("Ist es grad morgens, mittags oder abends?\n"))

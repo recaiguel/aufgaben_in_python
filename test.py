@@ -306,3 +306,19 @@ except ValueError:
     print("Gib eine gültige Zahl ein.") """
 
 # Aufgabe 6
+
+""" def stopNgo(ampel):
+    signal = {
+        "rot": "Stehen bleiben",
+        "gelb": "Achtung",
+        "grün": "Los gehts"
+    }
+
+    ampelSignal = signal.get(ampel.lower())
+
+    if ampelSignal:
+        print(ampelSignal)
+    else:
+        print("Ungültige Eingabe")
+
+stopNgo(input("Was sagt die ampel?\n")) """

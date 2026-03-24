@@ -231,3 +231,78 @@ steuer(float(input("Brutto: ")), float(input("Steuersatz: ")))
 
 
 # Bedingte Verzweigung
+
+# Aufgabe 1
+
+""" 
+try:
+    alter = int(input("Alter: "))
+    if alter >= 18:
+        print("Du bist alt genug.")
+    elif alter <= 0:
+        print("Ungültige Eingabe!")
+    else:
+        print("Du bist zu jung!")
+except ValueError:
+    print("Ungültige Eingabe!") """
+
+# Aufgabe 2
+
+""" 
+try:
+    zahl = int(input("Gib eine Zahl ein!: "))
+
+    if zahl > 0:
+        print("Zahl ist positiv.")
+    elif zahl == 0:
+        print("Zahl ist null.")
+    else:
+        print("Zahl ist negativ")
+except ValueError:
+    print("Ungültige Eingabe!") 
+"""
+
+# Aufgabe 3
+
+""" 
+passwort = "srspsswrd123"
+
+pswrdInput = input("Gib das Passwort ein.\n")
+
+if passwort == pswrdInput:
+    print("Anmeldung erfolgreich!")
+else:
+    print("Anmeldung fehlgeschlagen!")
+ """
+
+# Aufgabe 4
+
+""" try:
+    verfügbareNoten = [1, 2, 3, 4, 5, 6]
+    note = int(input("Gib deine Note ein: "))
+    
+    if note in verfügbareNoten:
+        if note <= 4:
+            print("Prüfung bestanden!")
+        else:
+            print("Prüfung nicht bestanden!")
+    else:
+        print("Diese Note kenne ich nicht!")
+except ValueError:
+    print("Ungültige Eingabe!") """
+    
+# Aufgabe 5
+
+""" 
+try:
+    grad = int(input("Gib eine beliebige Temperatur ein: "))
+
+    if grad < 0:
+        print("Es friert")
+    else:
+        print("Kein Frost")
+
+except ValueError:
+    print("Gib eine gültige Zahl ein.") """
+
+# Aufgabe 6

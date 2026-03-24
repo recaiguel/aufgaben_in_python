@@ -1,8 +1,10 @@
+try:
+    grad = int(input("Gib eine beliebige Temperatur ein: "))
 
-def steuer(brutto, steuersatz):
+    if grad < 0:
+        print("Es friert")
+    else:
+        print("Kein Frost")
 
-    steuerwert = brutto * (steuersatz/100)
-    print(f"{brutto:.2f} €, {steuersatz:.2f} %, {steuerwert:.2f} €")
-
-steuer(float(input("Brutto: ")), float(input("Steuersatz: ")))
-    
+except ValueError:
+    print("Gib eine gültige Zahl ein.")

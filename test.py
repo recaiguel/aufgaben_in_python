@@ -556,3 +556,19 @@ printRange(int(input("Start: ")), int(input("Stop: ")))
 
 # 9
 
+""" 
+for i in range(1, 19):
+    if i % 2 == 0:
+        print(i)
+ """
+
+# 10
+
+""" 
+wort = input("Gib ein wort ein: ")
+i = 0
+
+for char in wort:
+    i += 1
+print(i)
+ """

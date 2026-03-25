@@ -322,3 +322,237 @@ except ValueError:
         print("Ungültige Eingabe")
 
 stopNgo(input("Was sagt die ampel?\n")) """
+
+# Aufgabe 7
+
+""" 
+def funTageszeit(tageszeit):
+
+    if tageszeit >= 0 and tageszeit <= 5:
+        print("Nacht")
+    elif tageszeit >= 6 and tageszeit <= 11:
+        print("Morgen")
+    elif tageszeit >= 12 and tageszeit <= 17:
+        print("Nachmittag")
+    elif tageszeit >= 18 and tageszeit <= 23:
+        print("Abend")
+    else:
+        print("Ungültige Eingabe")
+        
+funTageszeit(int(input("Gib eine volle Uhrzeit ein: "))) """
+
+# Aufgabe 8
+
+""" 
+def wochentag(tag):
+
+    Wochentage = {
+        1: "Montag",
+        2: "Dienstag",
+        3: "Mittwoch",
+        4: "Donnerstag",
+        5: "Freitag",
+        6: "Samstag",
+        7: "Sonntag",
+    }
+
+    tag = Wochentage.get(tag)
+
+    if tag:
+        print(tag)
+    else:
+        print("Ungültige Eingabe")
+
+wochentag(int(input("Gib eine Zahl für ein Wochentag ein: ")))
+ """
+
+# Aufgabe 9
+
+""" try:
+    def besucher(alter):
+        if alter >= 16 and alter < 18:
+            print("Nur FSK16 Filme für dich!")
+        elif alter >= 18:
+            print("FSK18 erlaubt!")
+        elif alter >= 1 and alter < 16:
+            print("Du bist zu Jung für FSK16!")
+        else:
+            print("Gib eine gültige Zahl ein!")
+
+    besucher(int(input("Wie alt bist du?\n\n")))
+except ValueError:
+    print("Gib eine gültige Zahl ein!\n") """
+
+###############
+
+# zwischenaufgaben
+
+""" Zahl = 1
+liste = []
+while Zahl <= 10:
+    neuer_wert = Zahl * Zahl
+    liste.append(neuer_wert)
+    Zahl += 1
+print(liste)
+ """
+
+###############
+
+""" 
+meinWort = "Ananas"
+
+count = 0
+
+for char in meinWort.lower():
+    if char == "a":
+        count += 1
+        
+print(count)
+
+ """
+
+###############
+
+""" 
+arr = [4, 3, 8, 9, 10, 17, 6, 25, 8, 10]
+
+summe = 0
+
+for num in arr:
+    summe += num
+print(summe)
+
+ """
+
+###############
+
+""" 
+arr = [4, 3, 8, 9, 10, 17, 6, 25, 8, 10]
+
+maxRecord = 0
+
+for num in arr:
+    if num > maxRecord:
+        maxRecord = num
+print(maxRecord) """
+
+
+###############
+
+
+# Aufgabe 10
+
+""" 
+try:
+    mitglied = input("Bist du Mitglied bei uns? y/n:\n")
+    try:
+        if mitglied is "y":
+            mitglied = True
+            alter = int(input("Wie alt bist du?"))
+        elif mitglied is "n":
+            mitglied = False
+        else:
+            print("Ungültige Eingabe")
+    except ValueError:
+        print("Ungültige Eingabe")
+except ValueError:
+    print("Ungültige Eingabe")
+
+if mitglied is True:
+    print("Als Mitglied bei uns erhälst du ein Rabatt.")
+    if alter < 18:
+        print("Du bekommst ein Jugendrabatt.")
+    else:
+        print("Du bekommst ein Mitgliedsrabatt")
+else:
+    print("Für ein Rabatt musst du mindestens Mitglied sein!")
+ """
+
+# Algorithmische Übungen 2
+# Einfache Schleifen
+
+# 1 
+""" 
+i = 0
+for i in range(10):
+    print(i+1) 
+"""
+
+# 2
+
+""" 
+zutaten = ["Eier", "Salz", "Mehl", "Hefe"]
+
+for i in zutaten:
+    print(i)
+"""
+
+# 3
+
+""" 
+num = 10
+
+while num > 0:
+    print(num)
+    num -= 1
+else:
+    print("Start")
+ """
+
+# 4
+
+""" 
+countdown = 5
+
+while countdown > 0:
+    print("Hallo Python")
+    countdown -= 1
+ """
+
+# 5
+
+""" 
+wort = input("Gib ein Wort ein.\n")
+
+for i in wort:
+    print(i)
+ """
+
+# 6
+
+""" 
+def einmalEins(num):
+    multiplier = 0
+
+    while multiplier < 10:
+        multiplier += 1
+        print(num * multiplier)
+
+einmalEins(int(input("Welche Zahl willst du multiplizieren?: ")))
+ """
+
+# 7
+
+""" 
+kosten = [2.50, 4.40, 3, 9, 2.10]
+
+summe = 0
+for i in kosten:
+    summe += i
+    i += 1
+print(summe)
+ """
+
+# 8
+
+""" 
+def printRange(start, stop):
+
+    for i in range(start, stop):
+        print(i)
+    print(stop)
+printRange(int(input("Start: ")), int(input("Stop: ")))
+ """
+
+# 9
+

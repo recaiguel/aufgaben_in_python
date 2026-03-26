@@ -674,3 +674,104 @@ listeC = listeA + listeB
 print(listeC)
 
  """
+
+# Aufgabe aus Folie GrundlagenProgrammierung_2
+
+""" 
+multiplikationstabelle = []
+
+for i in range(1, 6):
+    row = []
+    print()
+    for j in range(1, 6):
+        row.append(i * j)
+    multiplikationstabelle.append(row)
+print(multiplikationstabelle)
+ """
+
+#########################
+
+""" damago_laptop = {
+    "Prozessor": "Core i5-8350U",
+    "Grafik": "Intel UHD-Graphics 620",
+    "Arbeitsspeicher GB": 16,
+    "Festplatte GB": 512,
+    "Betriebssystem": "Windows"
+}   
+
+
+print(damago_laptop)
+print()
+
+
+damago_laptop["Betriebssystem"] = "Kali Linux"
+damago_laptop["Externe SSD GB"] = 1024
+
+print(damago_laptop)
+print()
+
+for key, value in damago_laptop.items():
+    print(key,":", value) """
+
+# Mehrdimensionale Arrays
+
+# 1
+
+""" matrix = []
+
+for i in range(2):
+    liste = []
+    matrix.append(liste)
+print(matrix)
+ """
+
+# 2
+
+""" matrix = [
+    ["Hund", "Katze", "Maus"],
+    ["Haus", "Hof", "Garten"],
+    ["Baum", "Blume", "Wiese"]
+        ]
+
+print(matrix[0][2]) # Maus
+print(matrix[1][0]) # Haus
+print(matrix[2][2]) # Wiese
+print(matrix[1][2]) # Garten
+ """
+
+# 3
+
+#Gegeben ist folgendes fehlerhaftes Mehrdimensionales Array:
+
+""" matrix = [
+    ["Schulung", "Dozent", "Teilnehmer"],
+    ["PC", "Beamer", "Monitor"]
+    ["Variablen", "Funktionen", "Schleifen"],
+    ]
+ """
+#Wieso ist es fehlerhaft?
+# Es fehlt ein Komma
+
+# 4
+
+""" matrix = [
+    [4, 8],
+    [9, 6]
+]
+
+matrix[1][1] = 4
+
+print(matrix) """
+
+# 5
+
+""" matrix = [
+    [True, False],
+    [False, True]
+]
+
+matrix.append([339, "Eving"])
+
+print(matrix)
+ """
+

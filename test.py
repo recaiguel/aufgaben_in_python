@@ -572,3 +572,105 @@ for char in wort:
     i += 1
 print(i)
  """
+
+
+# Arrays
+
+# 1
+
+""" 
+fruits = ["Apfel", "Banane", "Orange", "Ananas", "Erdbeere"]
+
+print(fruits[0], fruits[2], fruits[3]) """
+
+# 2
+
+""" 
+liste = []
+
+liste.append("Hans")
+liste.append("Jürgen")
+liste.append("Peter")
+
+print(liste)
+# 3
+print(len(liste))
+ """
+
+# 4
+
+""" 
+orte = ["Köln", "Düsseldorf", "Duisburg", "Essen", "Mülheim"]
+
+orte.reverse()
+print(orte)
+ """
+
+# 5 
+
+""" 
+farben = ["Grün", "Lila", "Cyan"]
+
+farben[1] = "Blau"
+
+print(farben) """
+
+# 6
+
+""" 
+werte = [7, 3, 4, 0, 1, 6, 8]
+
+werte.sort()
+print(werte)
+print(min(werte))
+print(max(werte))
+ """
+
+# 7
+""" 
+werte = [7, 3, 4, 0, 1, 6, 8]
+
+letztesWert = werte.pop()
+
+print(letztesWert)
+print(werte)
+ """
+
+# 8
+""" 
+werte = [7, 3, 4, 0, 1, 6, 8]
+
+werteVerdoppelt = []
+
+for i in werte:
+    
+    verdoppelung = i * 2
+
+    werteVerdoppelt.append(verdoppelung)
+
+print(werte)
+print(werteVerdoppelt)
+ """
+
+# 9
+""" 
+teilnehmer = ["Hans", "Jörg", "Anna", "Bernd"]
+
+checkIfContains = "Anna"
+
+if checkIfContains in teilnehmer:
+    print("Yes")
+else:
+    print("No")
+ """
+
+# 10
+""" 
+listeA = [1,2,3,4,5]
+listeB= [6,7,8,9,10]
+
+listeC = listeA + listeB
+
+print(listeC)
+
+ """

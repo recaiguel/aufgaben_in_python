@@ -809,3 +809,27 @@ for i in range(len(preise) - 1, -1, - 1):
 print(preiseUmgekehrt)
  """
 
+# 4
+""" 
+zahlenreihe = [1, 7, 3, 4, 3, 6, 1, 2, 7, 3, 5, 6, 3]
+
+count = 0
+checkNum = int(input("Gib eine Zahl ein: "))
+
+for i in range(len(zahlenreihe)):
+    if checkNum == zahlenreihe[i]:
+        count += 1
+print(count) """
+
+#5
+""" 
+werte = [4, 6, 8, 9, 10, 4, 3]
+
+total = 0
+for i in range(len(werte)):
+    total += werte[i]
+
+print(total) """
+
+#6
+

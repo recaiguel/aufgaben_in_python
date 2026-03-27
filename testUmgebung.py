@@ -1,7 +1,7 @@
+werte = [4, 6, 8, 9, 10, 4, 3]
 
-preise = [2.80, 4.70, 3.20, 6.30, 7]
-preiseUmgekehrt = []
+total = 0
+for i in range(len(werte)):
+    total += werte[i]
 
-for i in range(len(preise) - 1, -1, - 1):
-    preiseUmgekehrt.append(preise[i])
-print(preiseUmgekehrt)
+print(total)
